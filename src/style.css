@@ -38,6 +38,9 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: gray;
+  max-height: 100vh;
+  overflow-y: hidden;
 }
 
 h1 {
@@ -64,14 +67,11 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.card {
-  padding: 2em;
-}
+
 
 #app {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 

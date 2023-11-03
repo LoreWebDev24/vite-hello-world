@@ -1,17 +1,17 @@
 <!-- LOGICA -->
 <script>
 // COMPONENTS IMPORT 
-  import componentJumbo from "./components/AppHero.vue"
+  import AppHero from "./components/AppHero.vue"
   // VUE
   export default {
     data() {
       return {
         title: 'La mia prima app con Vite!',
         message: 'Hello Node + Vite + Vue',
-        components: {
-          componentJumbo: componentJumbo
-        }
       }
+    },
+    components: {
+      AppHero
     }
   }
 </script>
@@ -19,9 +19,9 @@
 <!-- DOM -->
 <template>
   <div class="message">
-    <componentJumbo></componentJumbo>
     <h3>{{ title }}</h3>
     <p>{{ message }}</p>
+    <AppHero/>
   </div>
 </template>
 
