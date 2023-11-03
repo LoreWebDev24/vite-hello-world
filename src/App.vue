@@ -1,19 +1,30 @@
 <!-- LOGICA -->
 <script>
+// COMPONENTS IMPORT 
+  import componentJumbo from "./components/AppHero.vue"
+  // VUE
   export default {
     data() {
       return {
-        message: 'Hello Node + Vite + Vue'
+        title: 'La mia prima app con Vite!',
+        message: 'Hello Node + Vite + Vue',
+        components: {
+          componentJumbo: componentJumbo
+        }
       }
     }
   }
 </script>
+
 <!-- DOM -->
 <template>
   <div class="message">
-    {{ message }}
+    <componentJumbo></componentJumbo>
+    <h3>{{ title }}</h3>
+    <p>{{ message }}</p>
   </div>
 </template>
+
 <!-- STILE -->
 <style scoped>
 .message {
